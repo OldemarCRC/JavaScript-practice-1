@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+  <body>
+    <div id="date-and-time">
+      <h2 id="header-2">Date and Time</h2>
+      <p id="date-time"></p>
+    </div>
+    
+    <div id="full-year">
+      <h2 id="header-2">Full Year</h2>
+      <p id="year"></p>
+    </div>
+
+    <div id="month">
+      <h2 id="header-2">Month</h2>
+      <p id="m"></p>
+    </div>
+
+    <div id="_date">
+      <h2 id="header-2">Date</h2>
+      <p id="date"></p>
+    </div>
+
+    <div id="_hour">
+      <h2 id="header-2">Hours</h2>
+      <p id="h"></p>
+    </div>
+
+    <div id="minutes">
+      <h2 id="header-2">Minutes</h2>
+      <p id="min"></p>
+    </div>
+
+    <div id="user-age">
+        <h2 id="header-2">User age</h2>
+        <label for="age">
+          Enter your age:
+        </label>
+        <input type="number" id="age" name="age" min="0">
+        <button onclick="checkAge()">
+          Check
+        </button><br>
+
+        <p id="message"></p>
+    </div>
+
+    <div id = "macdonalds">
+        <h2 id="header-2">Mac Donalds Recruitment interview</h2>
+        <label for="age_for_work">
+          Enter your age:
+        </label>
+        <input type="number" id="age_for_work" name="age" min="0">
+        <button onclick="checkMacdonalds()">
+          Check
+        </button><br>
+
+        <p id="macmessage"></p>
+    </div>
+
+    <div id=name>
+        <h2 id="header-2">My name</h2>
+        <label for="letter">
+          Enter a letter as a variable (a-z):
+        </label>
+        <input type="text" id="letter" name="letter">
+        <button onclick="checkLetter()">
+          Check
+        </button><br>
+
+        <p id="my_name"></p>
+    </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>

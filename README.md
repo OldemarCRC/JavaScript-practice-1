@@ -3,3 +3,4 @@ Exercise 3 repository is a homework of the vocational school Vantaan Ammattiopis
 includes HTML, JavaScript and CSS files.
 
 I am doing this change just to see how this works.
+This is another change to use git pull from my local repository.

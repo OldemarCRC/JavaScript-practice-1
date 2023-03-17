@@ -11,8 +11,9 @@ const date_time = new Date();
         document.getElementById("h").innerHTML = hour;
         let minutes = date_time.getMinutes(); //getMinutes() method
         document.getElementById("min").innerHTML = minutes;
+        
         function checkAge() {
-          let age = document.getElementById("age").value;
+          var age = document.getElementById("age").value;
           if (age >= 18) {
             document.getElementById("message").innerHTML = "You are an adult";
           } else {
@@ -20,8 +21,8 @@ const date_time = new Date();
           }
         }
         function checkMacdonalds() {
-          let age_for_work = document.getElementById("age_for_work").value;
-          if (age_for_work >= 16 && age_for_work <=25) {
+          var age = document.getElementById("age").value;
+          if (age >= 16 && age <=25) {
               document.getElementById("macmessage").innerHTML = "You can work with us";
           } else {
               document.getElementById("macmessage").innerHTML = "Sorry! You can't work with us";

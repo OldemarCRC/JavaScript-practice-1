@@ -1,150 +1,508 @@
-*{
-	margin: 0;
-	padding: 0;
+/*general styles*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-  background-color: #ABA5AF;
-  padding: 4%;
+html {
+  height: 100%;
+  width: 100%;
 }
 
-body{
-  padding: 2%;
-  width: 98%;
-  height: 98%;
-  background: linear-gradient(to right, #07F0BC 50%, #F89BC8 100%);
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #07F0BC 35%, #F89BC8 100%);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#header-2 {
+  font-size: 2em;
+}
+
+#date-and-time {
+  font-family: Tahoma, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 98%;
 }
 
-#date-and-time > p{
-	font-family: Tahoma, Verdana, sans-serif;
-	font-size: 1.1em;
-  
+#date-and-time>p {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#time-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
   margin-top: 1%;
 }
 
-#date-and-time{
+.time_boxes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 18%;
+  background-color: #ABA5AF;
+  float: left;
+}
+
+.text_boxes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#container-2 {
+  height: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2%;
-  width: 80%;
-  line-height: 100%;
-}
-#date-and-time >h2{
-  margin-bottom: 1%;
-
 }
 
-#header-2{
-	font-family: Tahoma, Verdana, sans-serif;
-	font-size: 1.5em;
-
+#top-container {
+  height: 48%;
+  width: 90%;
 }
 
-#time-container{
+#bottom-container {
+  height: 52%;
+  width: 90%;
+}
+
+.user-forms {
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  width: 35%;
+  height: 100%;
+}
+
+.input_button {
+
   display: flex;
   flex-direction: row;
-  width: 80%;
-  margin-top: 2%;
-height: 10%;
+  width: 25%;
+  height: 50%;
 }
 
-#full-year{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1%;
-  width: 20%;
-  background-color: #ABA5AF;
-  float: left;
-  
-}
-
-#month{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1%;
-  width: 20%;
-  background-color: #ABA5AF;
-  float: left;
-  margin-left: 1%;
-  
-}
-
-#_date{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1%;
-  width: 20%;
-  background-color: #ABA5AF;
-  float: left;
-  margin-left: 1%;
-  
-}
-
-#_hour{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1%;
-  width: 20%;
-  background-color: #ABA5AF;
-  float: left;
-  margin-left: 1%;
-  
-}
-
-#minutes{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1%;
-  width: 20%;
-  background-color: #ABA5AF;
-  float: left;
-  margin-left: 1%;
-  
-}
-
-#user-age{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2%;
-  width: 80%;
-  height: 20%;
-  
-}
-
-#user-age >label{
+.input_button>input {
+  height: 100%;
+  width: 49%;
   font-family: Tahoma, Verdana, sans-serif;
-	font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
+  text-align: center;
 }
 
-input{
-  height: 25%;
-  width: 5%;
+.input_button>button {
+  height: 100%;
+  width: 49%;
+  margin-left: 2%;
+  font-size: 2em;
+}
+
+.messages {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 2em;
+  width: 35%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+/**********************************************24 INCH MONITOR STYLES*****************************************/
+@media (min-width: 1441px) {
+  
+  body {
+    width: 90%;
+    height: 90%;
+   }
+
+  #date-and-time {
+    margin-top: 5%;
+    margin-left: 6%;
+  }
+
+  #date-and-time>p {
+    margin-top: 1%;
+  }
+
+  .time_boxes {
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+
+  .time_boxes:first-child {
+    margin-left: 6%;
+  }
+
+  .text_boxes {
+    font-size: 2em;
+    margin-top: 4%;
+  }
+
+  #container-2 {
+    margin-top: 2%;
+    margin-left: 6%;
+  }
+
+  .user-forms {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+ 
+}
+/*********************************************END OF 24 INCH MONITOR STYLES*******************************/
+
+/********************************************LAPTOP'S STYLES*************************************/
+@media (min-width: 1025px) and (max-width: 1440px) {
+  
+  
+  #date-and-time {
+    margin-top: 5%;
+  }
+
+  #date-and-time>p {
+    margin-top: 1%;
+  }
+
+  .time_boxes {
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+
+  .time_boxes:first-child {
+    margin-left: 4%;
+  }
+
+  .text_boxes {
+    font-size: 1.3em;
+    margin-top: 4%;
+  }
+
+  #container-2 {
+    margin-top: 2%;
+  }
+
+  .user-forms {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .input_button>button {
+    font-size: 1.5em;
+  }
+}
+
+/**************************************************END OF LAPTOP STYLES**********************************************/
+
+/***********************************************STARTS TABLETS PORTRAIT*******************************/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  
+  #header-2 {
+    margin-top: 8%;
+  }
+
+  #date-and-time>p {
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  .time_boxes {
+    margin-top: 5%;
+    padding-top: 7%;
+  }
+
+  .time_boxes:nth-child(n+2) {
+    margin-left: 1%;
+
+  }
+
+  .text_boxes {
+    font-size: 1.8em;
+  }
+
+  #container-2 {
+    margin-top: 5%;
+  }
+
+  .user-forms {
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+    height: 20%;
+  }
+
+  .input_button {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: 30%;
+  }
+
+  .input_button>input {
+    width: 60%;
+  }
+
+  .input_button>button {
+    width: 35%;
+  }
+
+  .messages {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+/***********************************************END TABLET PORTRAIT***************************************/
+/***********************************************STARTS TABLET LANDSCAPE**************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  #date-and-time {
+    margin-top: 5%;
+  }
+
+  #date-and-time>p {
+    font-size: 1.1em;
+    margin-top: 1%;
+  }
+
+  .time_boxes {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 1.1em;
+  }
+
+  .time_boxes:first-child {
+    margin-left: 4%;
+
+  }
+
+  .text_boxes {
+    font-size: 1.2em;
+    margin-top: 5%;
+  }
+
+  #container-2 {
+    margin-top: 2%;
+  }
+
+  .user-forms {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+ }
+
+/*********************************************END OF TABLETS LANDSCAPE*****************************************/
+
+/********************************************start cellphone portrait**************************************/
+@media (max-width: 414px) and (orientation: portrait) {
+  
+  #date-and-time {
+    margin-top: auto;
+  }
+
+  #date-and-time>p {
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  .time_boxes {
+    margin-top: 5%;
+    padding-top: 7%;
+  }
+
+  .time_boxes:nth-child(n+2) {
+    margin-left: 1%;
+
+  }
+
+  .text_boxes {
+    font-size: 1.2em;
+  }
+
+  #container-2 {
+    margin-top: 5%;
+  }
+
+  .user-forms {
+    align-items: center;
+
+  }
+
+  .form {
+    font-size: 1.5em;
+    width: 100%;
+    height: 20%;
+  }
+
+  .input_button {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: 30%;
+  }
+
+  .input_button>input {
+    width: 60%;
+  }
+
+  .input_button>button {
+    width: 35%;
+    font-size: 1.5em;
+  }
+
+  .messages {
+    font-size: 1.5em;
+    width: 100%;
+    margin-left: 0%;
+  }
 
 }
 
-#macdonalds{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2%;
-  width: 80%;
+/**********************************end of @media (max-width: 390px) and (orientation: portrait)****************************/
+
+/********************************************start of cellphones landscape ********************************************/
+
+@media (max-height: 414px) and (orientation: landscape) {
+ 
+  #date-and-time {
+    margin-top: auto;
+  }
+
+  #header-2 {
+
+    font-size: 1.7em;
+  }
+
+  #date-and-time>p {
+    font-size: 1.1em;
+    margin-top: 1%;
+  }
+
+  .time_boxes {
+    margin-top: auto;
+    margin-left: 1%;
+  }
+
+  .time_boxes:first-child {
+    margin-left: 4%;
+  }
+
+  .text_boxes {
+    font-size: 1em;
+    margin-top: 3%;
+  }
+
+  #container-2 {
+    margin-top: 2%;
+  }
+
+  .user-forms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form {
+    font-size: 1.2em;
+  }
+
+  .input_button>button {
+    font-size: 1.2em;
+  }
+
+  .messages {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    width: 50%;
+  }
+
 }
 
-#name{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2%;
-  width: 80%;
+/************************end of @media (max-height: 390px) and (orientation: landscape)*******************************/
+
+/********************************mobile phones with largest screens-landscape*************************************/
+@media (max-height: 414px) and (min-width: 896px)and (orientation: landscape) {
+  
+  #date-and-time {
+    margin-top: auto;
+  }
+
+  #header-2 {
+
+    font-size: 1.7em;
+  }
+
+  #date-and-time>p {
+    font-size: 1.1em;
+  }
+
+  .time_boxes {
+    height: 100%;
+    margin-top: auto;
+    margin-left: 1%;
+  }
+
+  .time_boxes:first-child {
+    margin-left: 4%;
+  }
+
+  .text_boxes {
+    font-size: 0.9em;
+    margin-top: auto;
+  }
+
+  #container-2 {
+    margin-top: 1%;
+    height: 48%;
+    width: 98%;
+  }
+
+  #top-container {
+    height: 48%;
+    width: 98%;
+   
+  }
+
+  #bottom-container {
+    height: 50%;
+    width: 98%;
+   
+  }
+
+  .user-forms {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .form {
+    font-size: 1.5em;
+   }
+
+  .input_button>button {
+    font-size: 1.5em;
+  }
+
+  .messages {
+    font-size: 1.2em;
+    width: 50%;
+  }
 }

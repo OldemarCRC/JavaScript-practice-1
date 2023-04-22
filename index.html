@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-
+  <title>JavaScript Exercise-1</title>
 </head>
-  <body>
-    <div id="date-and-time">
-      <h2 id="header-2">Date and Time</h2>
-      <p id="date-time"></p>
-    </div>
-    
-    <div id="time-container">
-      <div id="full-year">
-        <h2 id="header-2">Full Year</h2>
-        <p id="year"></p>
-      </div>
-  
-      <div id="month">
-        <h2 id="header-2">Month</h2>
-        <p id="m"></p>
-      </div>
-  
-      <div id="_date">
-        <h2 id="header-2">Date</h2>
-        <p id="date"></p>
-      </div>
-  
-      <div id="_hour">
-        <h2 id="header-2">Hours</h2>
-        <p id="h"></p>
-      </div>
-  
-      <div id="minutes">
-        <h2 id="header-2">Minutes</h2>
-        <p id="min"></p>
-      </div>
 
-    </div>
-    
+<body>
+  <div id="date-and-time">
+    <h2 id="header-2">Date and Time</h2>
+    <p id="date-time"></p>
+  </div>
 
-    <div id="user-age">
-        
-        <label for="age">
+  <div id="time-container">
+    <div class="time_boxes">
+      <h2 class="text_boxes">Full Year</h2>
+      <p class="text_boxes" id="year"></p>
+    </div>
+
+    <div class="time_boxes">
+      <h2 class="text_boxes">Month</h2>
+      <p class="text_boxes" id="m"></p>
+    </div>
+
+    <div class="time_boxes">
+      <h2 class="text_boxes">Date</h2>
+      <p class="text_boxes" id="date"></p>
+    </div>
+
+    <div class="time_boxes">
+      <h2 class="text_boxes">Hours</h2>
+      <p class="text_boxes" id="h"></p>
+    </div>
+
+    <div class="time_boxes">
+      <h2 class="text_boxes">Min</h2>
+      <p class="text_boxes" id="min"></p>
+    </div>
+
+  </div>
+
+  <div id="container-2">
+    <div id="top-container">
+      <div class="user-forms">
+
+        <label class="form" for="age">
           Enter your age:
         </label>
-        <input type="number" id="age" name="age" min="0">
-        <button onclick="checkAge()">
-          Check
-        </button><br>
-
-        <p id="message"></p>
+        <div class="input_button">
+          <input type="number" id="age" name="age" min="0">
+          <button onclick="checkAge()" class="button">
+            Check
+          </button><br>
+        </div>
+        <p class="messages" id="message"></p>
+      </div>
     </div>
 
-    <div id = "macdonalds">
-        <h2 id="header-2">Mac Donalds Recruitment interview</h2>
-        
-        <button onclick="checkMacdonalds()">
-          Check
-        </button><br>
-
-        <p id="macmessage"></p>
-    </div>
-
-    <div id=name>
-        <h2 id="header-2">My name</h2>
-        <label for="letter">
-          Enter a letter as a variable (a-z):
+    <div id="bottom-container">
+      <div class="user-forms">
+        <label class="form" for="letter">
+          Enter a letter:
         </label>
-        <input type="text" id="letter" name="letter">
-        <button onclick="checkLetter()">
-          Check
-        </button><br>
-
-        <p id="my_name"></p>
+        <div class="input_button">
+          <input type="text" id="letter" name="letter">
+          <button onclick="checkLetter()" class="button">
+            Check
+          </button><br>
+        </div>
+        <p class="messages" id="my_name"></p>
+      </div><!--end usersform-->
     </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 
-      <script src="script.js"></script>
-  </body>
 </html>

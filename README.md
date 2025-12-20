@@ -1,23 +1,34 @@
-# Exercise-3
-Exercise 3 repository is a homework of the vocational school Vantaan Ammattiopisto Varia
-includes HTML, JavaScript and CSS files.
+# JavaScript Practice - Vocational School Project
 
-I am doing this change just to see how this works.
-This is another change to use git pull from my local repository.
-This line is to change my local repository and push the changes into my GitHub repository, using git push.
+> ⚠️ **Archive Notice:** This is an early learning project from my first JavaScript course at Vantaan Ammattiopisto Varia (2023). For current professional work, see [my portfolio](https://oldemarcrc.github.io/my-portfolio/).
 
-Added a new line for testing.
+## 🔗 [Live Demo](https://oldemarcrc.github.io/JavaScript-practice-1/)
 
-CSS Responsive Styles
-This repository contains changes made to the CSS file to make it responsive on various screen sizes. The following styles were applied for different screen sizes and orientations:
+## 📝 Description
 
-General Styles
-Screen size greater than 1440px
-Screen size between 1025px and 1440px
-Screen size between 768px and 1024px in portrait orientation
-Screen size between 768px and 1024px in landscape orientation
-Screen size less than 414px in portrait orientation
-Screen height less than 414px in landscape orientation
-Screen height less than 414px and width greater than 896px in landscape orientation
-These styles will ensure that the website looks good and functions well across various devices and screen sizes.
+Basic JavaScript exercises demonstrating fundamental concepts:
+- Real-time date and time display
+- Age validation with conditional messaging
+- Letter input validator
+- Responsive CSS layouts for multiple screen sizes
 
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## 📚 Learning Outcomes
+
+This project helped me understand:
+- DOM manipulation
+- Event handling
+- Form validation
+- Responsive design principles
+
+---
+
+**Author:** José Oldemar Chaves Urbina  
+**Year:** 2023  
+**Institution:** Vantaan Ammattiopisto Varia
+```

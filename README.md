@@ -31,4 +31,5 @@ This project helped me understand:
 **Author:** José Oldemar Chaves Urbina  
 **Year:** 2023  
 **Institution:** Vantaan Ammattiopisto Varia
-```
+
+---
